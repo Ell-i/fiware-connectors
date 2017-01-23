@@ -42,11 +42,13 @@ Edit your freeboard index.html and add the next line before the "Load more plugi
 
 
 The result should be something like this:
-	<script type="text/javascript">
+```javascript
 
-		head.js("js/freeboard+plugins.min.js",
-			"plugins/thirdparty/Orion_Datasource.js",
-			// *** Load more plugins here ***
+	head.js("js/freeboard+plugins.min.js",
+		"plugins/thirdparty/Orion_Datasource.js",
+		// *** Load more plugins here ***
+```	
+
 Usage
 -----
 ### Add new datasource
