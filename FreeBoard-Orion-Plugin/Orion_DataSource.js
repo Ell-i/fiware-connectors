@@ -39,6 +39,7 @@
 				url       : url,
 				dataType  : "JSON",
 				type: "POST",
+			        crossDomain: true,
 				data: '{"entities":[{"type": "'+currentSettings.type+'","isPattern": false, "id" :"'+currentSettings.id+'"}]}',
 				beforeSend: function(xhr)
 				{
