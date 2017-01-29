@@ -31,7 +31,9 @@
 		    }
 			
 			if(currentSettings.use_thingproxy) {
+			    if (!currentSettings.cbhost.startsWith('localhost')) {
 				url =  "https://thingproxy.freeboard.io/fetch/" + url;
+			    }
 			}	
 			$.ajax({
 				url       : url,
